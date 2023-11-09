@@ -13,7 +13,7 @@ __version__ = "1.0"
 __license__ = "MIT"
 __status__ = "Beta"
 
-class Crypt:
+class Cryptography:
 
   def caeser_cipher(self, text, shift):
     """
@@ -141,9 +141,9 @@ class Crypt:
     return decrypted_text.decode()
 
 if __name__ == "__main__":
-  print(Crypt().sha1(text = "Siddharth"))
-  print(Crypt().sha256(text = "Siddharth"))
-  print(Crypt().sha512(text = "Siddharth"))
-  print(Crypt().sha3_256(text = "Siddharth"))
-  print(Crypt().sha3_512(text = "Siddharth"))
+  print(Cryptography().sha1(text = "Siddharth"))
+  print(Cryptography().sha256(text = "Siddharth"))
+  print(Cryptography().sha512(text = "Siddharth"))
+  print(Cryptography().sha3_256(text = "Siddharth"))
+  print(Cryptography().sha3_512(text = "Siddharth"))
   

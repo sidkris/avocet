@@ -1,8 +1,8 @@
 from setuptools import setup
-from .crypt_lib import Crypt
+from .crypt_lib import Cryptography
 
 setup(
-    name="crypt",
+    name="cryptography",
     version="1.0",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
