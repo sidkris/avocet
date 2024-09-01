@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="cryptlib",
+    name="pycryptlib",
     version="1.0",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
