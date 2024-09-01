@@ -6,12 +6,10 @@ from Cryptodome.Cipher import AES
 from Cryptodome.PublicKey import RSA
 from Cryptodome.Cipher import PKCS1_OAEP
 
-
 __author__ = 'Siddharth Krishnan'
 __email__ = "sid@sidkrishnan.com"
 __version__ = "1.0"
 __license__ = "MIT"
-__status__ = "Beta"
 
 class PyCryptLibrary:
   
