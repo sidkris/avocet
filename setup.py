@@ -10,4 +10,10 @@ setup(
     license="MIT",
     install_requires=["cryptodomex"],
     packages=find_packages(),
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
 )
