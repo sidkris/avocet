@@ -2,10 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="avocet",
-    version="1.0.1",
+    version="1.0.2",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
     author_email="sid@sidkrishnan.com",
+    url="https://github.com/sidkris/avocet",
     license="MIT",
     install_requires=["pycryptodomex"],
     packages=find_packages(),
