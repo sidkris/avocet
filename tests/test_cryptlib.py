@@ -1,7 +1,5 @@
-# tests/test_cryptlib.py
-
 import unittest
-from cryptlib.cryptlib import CryptLib
+from cryptlib import CryptLib
 
 class TestCryptLib(unittest.TestCase):
     
