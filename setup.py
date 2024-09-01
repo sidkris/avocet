@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
-from .cryptlib import CryptLib
 
 setup(
     name="cryptlib",
     version="1.0",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
-    email="sid@sidkrishnan.com",
+    author_email="sid@sidkrishnan.com",
     license="MIT",
-    install_requires=["cryptodomex"],
+    install_requires=["pycryptodomex"],
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
