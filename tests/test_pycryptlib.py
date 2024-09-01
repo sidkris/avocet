@@ -1,7 +1,7 @@
 import sys
-sys.path.append("PyCryptLib")
+sys.path.append("pycryptlib")
 import unittest
-from pycryptLib import PyCryptLib
+from pycryptlib import PyCryptLib
 
 class TestPyPyCryptLib(unittest.TestCase):
     

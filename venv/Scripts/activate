@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\sidkr\Documents\GitHub\cryptlib\venv"
+VIRTUAL_ENV="C:\Users\sidkr\Documents\GitHub\pycryptlib\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
