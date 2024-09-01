@@ -1,36 +1,36 @@
 import sys
 sys.path.append("pycryptlib")
 import unittest
-from pycryptlib import PyCryptLib
+from pycryptlibrary import PyCryptLibrary
 
 class TestPyPyCryptLib(unittest.TestCase):
     
     def test_caeser_cipher(self):
         # Test Caesar cipher with different shifts
-        self.assertEqual(PyCryptLib.caeser_cipher('abc', 3), 'def')
-        self.assertEqual(PyCryptLib.caeser_cipher('xyz', 3), 'abc')
-        self.assertEqual(PyCryptLib.caeser_cipher('Hello, World!', 5), 'Mjqqt, Btwqi!')
+        self.assertEqual(PyCryptLibrary.caeser_cipher('abc', 3), 'def')
+        self.assertEqual(PyCryptLibrary.caeser_cipher('xyz', 3), 'abc')
+        self.assertEqual(PyCryptLibrary.caeser_cipher('Hello, World!', 5), 'Mjqqt, Btwqi!')
     
     def test_base64_encode_decode(self):
         # Test Base64 encoding and decoding
         original_text = 'Hello, World!'
-        encoded_text = PyCryptLib.base_64_encode(original_text)
-        decoded_text = PyCryptLib.base_64_decode(encoded_text)
+        encoded_text = PyCryptLibrary.base_64_encode(original_text)
+        decoded_text = PyCryptLibrary.base_64_decode(encoded_text)
         self.assertEqual(original_text, decoded_text)
     
     def test_hex_encode_decode(self):
         # Test Hex encoding and decoding
         original_text = 'Hello, World!'
-        encoded_text = PyCryptLib.hex_encode(original_text)
-        decoded_text = PyCryptLib.hex_decode(encoded_text)
+        encoded_text = PyCryptLibrary.hex_encode(original_text)
+        decoded_text = PyCryptLibrary.hex_decode(encoded_text)
         self.assertEqual(original_text, decoded_text)
     
     def test_xor_cipher(self):
         # Test XOR cipher encoding and decoding
         text = 'Hello, World!'
         key = 'key'
-        encoded_text = PyCryptLib.xor_cipher_encode(text, key)
-        decoded_text = PyCryptLib.xor_cipher_decode(encoded_text, key)
+        encoded_text = PyCryptLibrary.xor_cipher_encode(text, key)
+        decoded_text = PyCryptLibrary.xor_cipher_decode(encoded_text, key)
         self.assertEqual(text, decoded_text)
         
     
@@ -38,37 +38,37 @@ class TestPyPyCryptLib(unittest.TestCase):
         # Test MD5 hashing
         text = 'Hello, World!'
         expected_hash = '65a8e27d8879283831b664bd8b7f0ad4'
-        self.assertEqual(PyCryptLib.md5_hash(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.md5_hash(text), expected_hash)
     
     def test_sha1(self):
         # Test SHA-1 hashing
         text = 'Hello, World!'
         expected_hash = '0a0a9f2a6772942557ab5355d76af442f8f65e01'
-        self.assertEqual(PyCryptLib.sha1(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.sha1(text), expected_hash)
     
     def test_sha256(self):
         # Test SHA-256 hashing
         text = 'Hello, World!'
         expected_hash = 'dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f'
-        self.assertEqual(PyCryptLib.sha256(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.sha256(text), expected_hash)
     
     def test_sha512(self):
         # Test SHA-512 hashing
         text = 'Hello, World!'
         expected_hash = '374d794a95cdcfd8b35993185fef9ba368f160d8daf432d08ba9f1ed1e5abe6cc69291e0fa2fe0006a52570ef18c19def4e617c33ce52ef0a6e5fbe318cb0387'
-        self.assertEqual(PyCryptLib.sha512(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.sha512(text), expected_hash)
     
     def test_sha3_256(self):
         # Test SHA-3 256 hashing
         text = 'Hello, World!'
         expected_hash = '1af17a664e3fa8e419b8ba05c2a173169df76162a5a286e0c405b460d478f7ef'
-        self.assertEqual(PyCryptLib.sha3_256(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.sha3_256(text), expected_hash)
     
     def test_sha3_512(self):
         # Test SHA-3 512 hashing
         text = 'Hello, World!'
         expected_hash = '38e05c33d7b067127f217d8c856e554fcff09c9320b8a5979ce2ff5d95dd27ba35d1fba50c562dfd1d6cc48bc9c5baa4390894418cc942d968f97bcb659419ed'
-        self.assertEqual(PyCryptLib.sha3_512(text), expected_hash)
+        self.assertEqual(PyCryptLibrary.sha3_512(text), expected_hash)
     
     def test_rsa_encode_decode(self):
         # Generate RSA keys for testing
@@ -84,8 +84,8 @@ class TestPyPyCryptLib(unittest.TestCase):
         text = 'Hello, World!'
         
         # Encrypt and decrypt the text
-        encrypted_text = PyCryptLib.rsa_encode(text, public_key)
-        decrypted_text = PyCryptLib.rsa_decode(encrypted_text, private_key)
+        encrypted_text = PyCryptLibrary.rsa_encode(text, public_key)
+        decrypted_text = PyCryptLibrary.rsa_decode(encrypted_text, private_key)
         
         self.assertEqual(text, decrypted_text)
 

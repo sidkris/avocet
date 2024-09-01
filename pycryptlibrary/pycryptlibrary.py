@@ -13,7 +13,7 @@ __version__ = "1.0"
 __license__ = "MIT"
 __status__ = "Beta"
 
-class PyCryptLib:
+class PyCryptLibrary:
   
   @classmethod
   def caeser_cipher(self, text, shift):
