@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="avocet",
-    version="1.0",
+    version="1.0.1",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
     author_email="sid@sidkrishnan.com",

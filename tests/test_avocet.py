@@ -1,5 +1,5 @@
 import sys
-sys.path.append("avocet")
+sys.path.append("Avocet")
 import unittest
 from avocet.avocet import Avocet
 
