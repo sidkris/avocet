@@ -6,9 +6,8 @@ setup(
     version="1.0",
     description="An easy to use Python package for encryption and decryption needs",
     author="Siddharth Krishnan",
-    email="sidkrishnan@protonmail.com",
+    email="sid@sidkrishnan.com",
     license="MIT",
-    # url="https://github.com/sidkrishnan/crypt",
     install_requires=["cryptodomex"],
     packages=["crypt"],
 )
